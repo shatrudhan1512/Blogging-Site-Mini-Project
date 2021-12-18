@@ -1,5 +1,3 @@
-# titaniumaplus
-
 ## Blogging Site Mini Project Requirement
 
 ## Phase I
