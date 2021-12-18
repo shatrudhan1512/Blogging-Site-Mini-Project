@@ -1,7 +1,7 @@
 {
-  "name": "radium",
+  "name": "blogging-site-mini-project",
   "version": "1.0.0",
-  "description": "repository for backend cohort - Radium",
+  "description": "This Project is based on a blogging site. In this project, we have doing CRUD operations with MongoDB such as Creating authors & blogs and fetching & deleting blogs, As well as we have doing Authentication And Authorisation to protect the APIs.",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sabihak89/radium.git"
+    "url": "git+https://github.com/shatrudhan1512/Blogging-Site-Mini-Project"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sabihak89/radium/issues"
+    "url": "https://github.com/shatrudhan1512/Blogging-Site-Mini-Project/issues"
   },
-  "homepage": "https://github.com/sabihak89/radium#readme",
+  "homepage": "https://github.com/shatrudhan1512/Blogging-Site-Mini-Project#readme",
   "dependencies": {
     "axios": "^0.24.0",
     "body-parser": "^1.19.0",
