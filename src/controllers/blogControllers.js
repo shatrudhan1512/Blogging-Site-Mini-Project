@@ -69,8 +69,8 @@ const updateData = async function (req, res) {
   try {
     let blogId = req.params.id;
     let data = await blogModels.findOne({ _id: blogId });
+    
     let update = req.body;
-    let id3 = data.authorId;
     if (req.userId == data.authorId) {     // we are authorising particular author
       if (!data) {
         return res.status(404).send({ status: false, message: "Provide valid BlogId" });
@@ -158,6 +158,7 @@ const deleteSpecific = async function (req, res) {
     if (req.query.published) {
       obj.isPublished = req.query.isPublished;
     }
+    obj.authorId = req.userId
     let data = await blogModels.findOne(obj);
     let id4 = data.authorId;
     if (req.userId == id4) {

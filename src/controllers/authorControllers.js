@@ -37,7 +37,7 @@ const doLogin = async function (req, res) {
     if (user) {
       let fname = user.fname;
       let lname = user.lname;
-      let payload = { userId: user._id, email: user.email };
+      let payload = { userId: user._id};
       const generatedToken = jwt.sign(payload, "Radium Star");
       res.status(200).send({
         message: fname + " " + lname + " you have logged in Succesfully",
